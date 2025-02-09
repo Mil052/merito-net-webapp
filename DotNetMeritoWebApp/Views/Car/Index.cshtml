@@ -1,0 +1,16 @@
+﻿@model List<CarViewModel>
+@{
+    ViewData["Title"] = "Car Page";
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Hello World Car View!</h1>
+    @foreach (var car in Model) {
+        <div>
+            <div>Brand: @car.Brand</div>
+            <div>Name: @car.Name</div>
+            <div>Color: @car.Color</div>
+        </div>
+    }
+</div>
